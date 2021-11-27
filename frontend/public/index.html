@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns is-mobile">
+                <div class="column is-half is-offset-one-quarter">
+                    
+                        <div class="box">
+                            <h1 class="title">
+                                Simple Booking System
+                            </h1>
+                            <p class="subtitle">
+                                Please choose dates to book!
+                            </p>
+                            <hr>
+                                <form action="/booked" method="POST">
+                                <label class="label">Email</label>
+                                <input type="text" name="email"/>
+                                <br>
+                                <label class="label">Date Range</label>
+                                <input type="text" name="daterange" value="01/01/2021 - 01/15/2021" id="daterange"/>
+                                <hr>
+                                <button class="button is-black" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
